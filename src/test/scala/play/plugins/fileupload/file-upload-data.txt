@@ -1,0 +1,10 @@
+------------------------------c2a02946888a
+Content-Disposition: form-data; name="name"
+
+test-name
+------------------------------c2a02946888a
+Content-Disposition: form-data; name="filedata"; filename="test.txt"
+Content-Type: application/octet-stream
+
+test-data
+------------------------------c2a02946888a--
