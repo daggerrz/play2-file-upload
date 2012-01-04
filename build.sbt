@@ -2,7 +2,7 @@ organization := "play.plugins"
 
 name := "file-upload"
 
-version := "1.0-SNAPSHOT"
+version := "2.0-RC1-SNAPSHOT"
 
 scalaVersion := "2.9.1"
 
