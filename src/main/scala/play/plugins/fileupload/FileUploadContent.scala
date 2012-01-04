@@ -63,7 +63,7 @@ object FileUploadContent {
         def getInputStream = fileIn
       })
 
-      val t = new Iterator[FileItemStream] {
+      val itemIterator = new Iterator[FileItemStream] {
         def hasNext = {
           // Clean up our temp file when we know commons has parsed our entire stream
           if (!iterator.hasNext) {
@@ -78,7 +78,7 @@ object FileUploadContent {
         }
         def next() = iterator.next()
       }
-      FileUploadContent(t)
+      Right(FileUploadContent(itemIterator))
     }
   }
 }
